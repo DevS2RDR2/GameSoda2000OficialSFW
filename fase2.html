@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="JS/scriptQuaseVazio2.js" defer></script>
+    <script src="JS/confetti.js"></script>
+    <title>Document</title>
+</head>
+
+<style>
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: 0;
+
+}
+  body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/ShadowFla.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+</style>
+
+<body>
+
+  
+<audio id="finish"  controls hidden>
+  <source src="assets/Fnaf 2 6_AM.mp3" type="audio/mpeg">
+</audio>
+
+ <audio id="ost"  controls hidden loop>
+  <source src="assets/SHADOW.mp3" type="audio/mpeg">
+</audio> 
+
+
+<div class="flex">
+<!-- Adicione mais itens conforme necessário -->
+<div name = "carta1" id="carta1" class="card" onclick="flipCard(this)">
+  <div class="card-inner">
+      <div class="card-front">
+        <!-- Conteúdo do lado da frente do card -->
+        <img class="img" src="assets/cartaH.png" style="width: 200px; height: 300px;">
+      </div>
+      <div class="card-back">
+        <!-- Conteúdo do lado de trás do card -->
+        <img src="assets/SLA.jpg" style="width: 200px; height: 300px;" id="carta1">
+      </div>
+    </div>
+  </div>
+
+  <div name = "carta2" id="carta2" class="card" onclick="flipCard(this)">
+    
+    <div class="card-inner">
+        <div class="card-front">
+          <!-- Conteúdo do lado da frente do card -->
+          <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+        </div>
+        <div class="card-back">
+          <!-- Conteúdo do lado de trás do card -->
+          <img src="assets/BDS.jpeg" style="width: 200px; height: 300px;">
+        </div>
+      </div>
+    </div>
+
+    <div name = "carta2" id="carta2" class="card" onclick="flipCard(this)">
+    
+      <div class="card-inner">
+          <div class="card-front">
+            <!-- Conteúdo do lado da frente do card -->
+            <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+          </div>
+          <div class="card-back">
+            <!-- Conteúdo do lado de trás do card -->
+            <img src="assets/BDS.jpeg" style="width: 200px; height: 300px;" id="carta1">
+          </div>
+        </div>
+      </div>
+
+      <div name = "carta3" id="carta3" class="card" onclick="flipCard(this)">
+        
+        <div class="card-inner">
+            <div class="card-front">
+              <!-- Conteúdo do lado da frente do card -->
+              <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+            </div>
+            <div class="card-back">
+              <!-- Conteúdo do lado de trás do card -->
+              <img src="assets/Boroders.jpg" style="width: 200px; height: 300px;">
+            </div>
+          </div>
+        </div>
+
+        <div name = "carta1" id="carta1" class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+              <div class="card-front">
+                <!-- Conteúdo do lado da frente do card -->
+                <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+              </div>
+              <div class="card-back">
+                <!-- Conteúdo do lado de trás do card -->
+                <img src="assets/SLA.jpg" style="width: 200px; height: 300px;" id="carta1">
+              </div>
+            </div>
+          </div>
+        
+          <div name = "carta4" id="carta4" class="card" onclick="flipCard(this)">
+            
+            <div class="card-inner">
+                <div class="card-front">
+                  <!-- Conteúdo do lado da frente do card -->
+                  <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                </div>
+                <div class="card-back">
+                  <!-- Conteúdo do lado de trás do card -->
+                  <img src="assets/PI.jpeg" style="width: 200px; height: 300px;">
+                </div>
+              </div>
+            </div>
+        
+            <div name = "carta3" id="carta3" class="card" onclick="flipCard(this)">
+            
+              <div class="card-inner">
+                  <div class="card-front">
+                    <!-- Conteúdo do lado da frente do card -->
+                    <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                  </div>
+                  <div class="card-back">
+                    <!-- Conteúdo do lado de trás do card -->
+                    <img src="assets/Boroders.jpg" style="width: 200px; height: 300px;" id="carta1">
+                  </div>
+                </div>
+              </div>
+        
+              <div name = "carta5" id="carta5" class="card" onclick="flipCard(this)">
+                
+                <div class="card-inner">
+                    <div class="card-front">
+                      <!-- Conteúdo do lado da frente do card -->
+                      <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                    </div>
+                    <div class="card-back">
+                      <!-- Conteúdo do lado de trás do card -->
+                      <img src="assets/Andrey2.jpg" style="width: 200px; height: 300px;">
+                    </div>
+                  </div>
+                </div>
+
+                <div name = "carta6" id="carta6" class="card" onclick="flipCard(this)">
+                
+                  <div class="card-inner">
+                      <div class="card-front">
+                        <!-- Conteúdo do lado da frente do card -->
+                        <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                      </div>
+                      <div class="card-back">
+                        <!-- Conteúdo do lado de trás do card -->
+                        <img src="assets/roncas.jpg1" style="width: 200px; height: 300px;">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div name = "carta7" id="carta7" class="card" onclick="flipCard(this)">
+                
+                    <div class="card-inner">
+                        <div class="card-front">
+                          <!-- Conteúdo do lado da frente do card -->
+                          <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                        </div>
+                        <div class="card-back">
+                          <!-- Conteúdo do lado de trás do card -->
+                          <img src="assets/papa.jpg" style="width: 200px; height: 300px;">
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div name = "carta5" id="carta5" class="card" onclick="flipCard(this)">
+                
+                      <div class="card-inner">
+                          <div class="card-front">
+                            <!-- Conteúdo do lado da frente do card -->
+                            <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                          </div>
+                          <div class="card-back">
+                            <!-- Conteúdo do lado de trás do card -->
+                            <img src="assets/Andrey2.jpg" style="width: 200px; height: 300px;">
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div name = "carta6" id="carta6" class="card" onclick="flipCard(this)">
+                
+                        <div class="card-inner">
+                            <div class="card-front">
+                              <!-- Conteúdo do lado da frente do card -->
+                              <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                            </div>
+                            <div class="card-back">
+                              <!-- Conteúdo do lado de trás do card -->
+                              <img src="assets/roncas.jpg" style="width: 200px; height: 300px;">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div name = "carta7" id="carta7" class="card" onclick="flipCard(this)">
+                
+                          <div class="card-inner">
+                              <div class="card-front">
+                                <!-- Conteúdo do lado da frente do card -->
+                                <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                              </div>
+                              <div class="card-back">
+                                <!-- Conteúdo do lado de trás do card -->
+                                <img src="assets/papa.jpg" style="width: 200px; height: 300px;">
+                              </div>
+                            </div>
+                          </div>
+    
+    
+                          <div name = "carta4" id="carta4" class="card" onclick="flipCard(this)">
+                    
+                            <div class="card-inner">
+                                <div class="card-front">
+                                  <!-- Conteúdo do lado da frente do card -->
+                                  <img src="assets/cartaH.png" style="width: 200px; height: 300px;">
+                                </div>
+                                <div class="card-back">
+                                  <!-- Conteúdo do lado de trás do card -->
+                                  <img src="assets/PI.jpeg" style="width: 200px; height: 300px;">
+                                </div>
+                              </div>
+                            </div>
+
+</div>
+
+
+<button id="next" onclick="location.href='a/index.html'" hidden>💀</button>
+
+<div class="overlay" id="overlay">
+  
+    <img src="assets/fog.gif" alt="Imagem Cobrindo Toda a Página">
+</div>
+       
+
+</body>
+
+</html>
+

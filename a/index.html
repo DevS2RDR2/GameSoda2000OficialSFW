@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Game de Batalha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <audio id="fogEf"  controls hidden>
+        <source src="360ytmp3.com_128kbps-entering-fog-gate-sound-effect-dark-souls.mp3" type="audio/mpeg">
+      </audio>
+      
+      <audio id="ost"  controls hidden loop>
+        <source src="360ytmp3.com_128kbps-gwyn-lord-of-cinder-dark-souls-soundtrack.mp3" type="audio/mpeg">
+      </audio>
+
+      <style>
+
+        *{
+          margin:0;
+          padding: 0;
+          box-sizing: 0;
+        
+        }
+          body{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(arena.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+        
+        </style>
+
+  <div id="game-container">
+    <div id="player">
+        <img src="plim.png" alt="" style="height: 220px; width: 500px;">
+    </div>
+    <div id="boss">
+        <img src="plim2.png" alt="" style="height: 200px; width: 100px;">
+    </div>
+    <div id="battle-info">
+        <button id="attack-btn" class="btn">Atacar</button>
+        <button id="heal-btn" class="btn">Cura</button>
+        <div id="player-health">
+          <span id="player-name">Player</span>
+          <progress id="player-health-bar" value="100" max="100"></progress>
+          <span id="player-health-label">100/100</span>
+        </div>
+        <div id="boss-health">
+          <span id="boss-name">Gwyn</span>
+          <progress id="boss-health-bar" value="200" max="200"></progress>
+          <span id="boss-health-label">200/200</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <button class="btA" id="next">Atravessar?</button>
+    <div class="overlay" id="overlay">
+        <img src="fog.gif" alt="Imagem Cobrindo Toda a Página">
+    </div>
+
+
+    <div class="overlay2" id="overlay2">
+        <img src="Venceu.jpg" alt="Imagem Cobrindo Toda a Página">
+    </div>
+
+    <audio id="VITEf"  controls hidden>
+        <source src="vitoria.mp3" type="audio/mpeg">
+      </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

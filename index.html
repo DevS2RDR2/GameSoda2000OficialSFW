@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Soda 2000</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .background {
+      background-image: url('assets/Capa do jogo.png'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 24px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body class="background">
+  <div class="container">
+    <button onclick="location.href='jogoSoda2000.html'">Jogar</button>
+  </div>
+</body>
+</html>
